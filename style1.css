@@ -1,0 +1,76 @@
+*{
+
+    text-decoration: double;
+}
+/* color position ,fontstyle of the menu */
+.navbar{
+    background:bisque;
+    font-family: Arial, Helvetica, sans-serif;padding-right: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    transition: background-color .3s;
+    top: 0;
+    left: 0px;
+    right: 0px;
+    padding: 0;
+
+} 
+/* to make the list in display on a single line and the space between */
+.navdiv{
+    margin: 0 auto;
+    padding: 0 15px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* to give the spacing ,font and color of the main logo */
+.logo a{
+    font-size:medium;
+    font-style: normal;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:800;
+    color: black;
+}
+/* to make the list display in one single line */
+li{
+    list-style: none;
+     display: inline-block;
+}
+/* to display how the list should look like*/
+li a {
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    margin-right: 30px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transition effect for color and background */
+    background-color: none; /* Initial background */
+}
+
+/* Change text color and background color on hover */
+li a:hover {
+    color:blueviolet; 
+    font-style: normal;
+}
+/* to create separate page for each list*/
+.content{
+    height: 100vh;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+/* the color of page */
+.content:nth-child(even){
+    background-color:black;
+    color: aliceblue;
+}
+
+/* header sticky */
+.header-sticky{
+    position: fixed;
+    background-color: violet;
+    z-index: 2000;
+    transition: 0.4s;
+ }
